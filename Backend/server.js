@@ -8,7 +8,7 @@ import cartRouter from './routes/cartRoute.js';
 import orderRouter from './routes/orderRoute.js';
 
 const corsOptions = {
-   origin: ['http://localhost:5173', 'http://localhost:5174'], // Allow both front-end origins
+   origin: '*', // Allow all front-end origins
    credentials: true, // Enable credentials (cookies, authorization headers, etc.)
  };
  
