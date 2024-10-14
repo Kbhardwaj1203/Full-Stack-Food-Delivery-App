@@ -8,10 +8,9 @@ import cartRouter from './routes/cartRoute.js';
 import orderRouter from './routes/orderRoute.js';
 
 const corsOptions = {
-   origin: '*', // Allow all front-end origins
+   origin: ['http://localhost:5173', 'http://localhost:5174', 'https://foodie-frontend-vidr.onrender.com'], // Add deployed front-end origin
    credentials: true, // Enable credentials (cookies, authorization headers, etc.)
- };
- 
+};
  
 //app config
 const app = express()
